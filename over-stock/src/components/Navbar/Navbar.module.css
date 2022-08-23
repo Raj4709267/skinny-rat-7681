@@ -1,0 +1,101 @@
+.navbar {
+    position: sticky;
+    top: -1px;
+    background: white;
+}
+
+.navTopContainer {
+    display: flex;
+    gap: 20px;
+    border: 1px solid rgb(215, 215, 215);
+    margin-top: 10px;
+    padding: 15px 15px 15px 15px;
+    justify-content: space-between;
+}
+
+.navTopContainer>div {
+    display: flex;
+    align-items: center;
+
+}
+
+.navTopContainer>div:nth-child(4) {
+    width: 70%;
+}
+
+.cartQuntity {
+    position: absolute;
+    top: 12px;
+    color: #c92834;
+    font-weight: bold;
+}
+
+.iconsMenu {
+    display: flex;
+    gap: 20px;
+
+}
+
+.iconsMenu>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconsMenu p {
+    font-size: 13px;
+}
+
+.navTopContainer>div:nth-child(1) {
+    display: block;
+}
+
+.navTopContainer>div:nth-child(3) {
+    display: none;
+}
+
+.navTopContainer>div:nth-child(2) {
+    display: none;
+}
+
+@media (min-width: 200px) and (max-width: 900px) {
+    .iconsMenu>div {
+        display: none;
+    }
+
+    .navTopContainer>div:nth-child(1) {
+        display: none;
+    }
+
+    .navTopContainer>div:nth-child(3) {
+        display: block;
+    }
+
+    .navTopContainer>div:nth-child(2) {
+        display: block;
+    }
+}
+.Hamburger>div{
+    border-bottom: 1px solid #d1d1d1;
+    padding: 15px;
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navMenu>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navMenu>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6px;
+}
+.navMenu{
+    border-bottom: 2px solid rgb(215, 215, 215);
+}
