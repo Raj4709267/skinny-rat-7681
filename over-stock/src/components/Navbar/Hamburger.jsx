@@ -8,6 +8,7 @@ import {
   DrawerOverlay,
 } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import navbarCss from "../Navbar/Navbar.module.css";
 
 export default function Hamburger({ isOpen, onClose, setOpen }) {
@@ -38,70 +39,104 @@ export default function Hamburger({ isOpen, onClose, setOpen }) {
 
           <DrawerBody padding="0">
             <div className={navbarCss.Hamburger}>
-              <div>
-                <p> Furnitue</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Rugs</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Decor</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Bedding</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Home improvement</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Kitchen</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Outdoor</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Lighting</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Kids & Baby</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> More Categories</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Ideas</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Sales & Deals</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> My Account</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> My Lists</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Contact Us</p>
-                <ChevronRightIcon/>
-              </div>
-              <div>
-                <p> Club O</p>
-                <ChevronRightIcon/>
-              </div>
+              <Link to={"/furniture"}>
+                <div onClick={()=>onClose()} >
+                  <p> Furniture</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/rugs"}>
+                <div onClick={()=>onClose()}  >
+                  <p> Rugs</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/decor"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Decor</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/bedding"} >
+                {" "}
+                <div onClick={()=>onClose()}  >
+                  <p> Bedding</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/homeimprovement"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Home improvement</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/kitchen"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Kitchen</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/outdoor"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Outdoor</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/lighting"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Lighting</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/kids"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Kids & Baby</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/more"} >
+                <div onClick={()=>onClose()}  >
+                  <p> More Categories</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/ideas"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Ideas</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/sales"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Sales & Deals</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/account"} >
+                {" "}
+                <div onClick={()=>onClose()}  >
+                  <p> My Account</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/list"} >
+                <div onClick={()=>onClose()}  >
+                  <p> My Lists</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Contact Us</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
+              <Link to={"/"} >
+                <div onClick={()=>onClose()}  >
+                  <p> Club O</p>
+                  <ChevronRightIcon />
+                </div>
+              </Link>
             </div>
           </DrawerBody>
         </DrawerContent>

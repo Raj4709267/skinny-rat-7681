@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Logo2() {
   return (
     <>
-      <svg
+    <Link to={"/"} >
+    <svg
         class="Logo_logoIcon_2f"
         width="34"
         height="34"
@@ -19,7 +21,8 @@ function Logo2() {
           stroke="none"
           fill="inherit"
         ></path>
-      </svg>
+      </svg></Link>
+      
     </>
   );
 }

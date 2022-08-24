@@ -4,7 +4,7 @@ import { useState } from "react";
 import navbarCss from "../Navbar/Navbar.module.css";
 import CheckOut from "./CheckOut";
 import Hamburger from "./Hamburger";
-import Icons from "./Icons";
+import Icons, { CartIcon } from "./Icons";
 import Logo from "./Logo";
 import Logo2 from "./Logo2";
 import NavMenu from "./NavMenu";
@@ -31,20 +31,26 @@ function Navbar() {
           {/* logo */}
           <Logo2 />
         </div>
-        <div>
+        <div className={navbarCss.search}>
           {/* search */}
           <Search />
         </div>
         <div className={navbarCss.iconsMenu}>
           <Icons />
         </div>
+        <div className={navbarCss.cartIcon}>
+          <CartIcon />
+        </div>
         {isCheckout && <CheckOut />}
       </div>
       <div>
         <Hamburger isOpen={isOpen} setOpen={setOpen} />
       </div>
+      <div className={navbarCss.search2}>
+      <Search />
+      </div>
       <div className={navbarCss.navMenu}>
-        <NavMenu/>
+        <NavMenu />
       </div>
     </div>
   );

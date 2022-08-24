@@ -1,5 +1,7 @@
 import {Routes,Route} from "react-router-dom"
+import Account from "./Account";
 import Bedding from "./Bedding";
+import Cart from "./Cart";
 import Decor from "./Decor";
 import Furniture from "./Furniture";
 import Home from "./Home";
@@ -8,6 +10,7 @@ import Ideas from "./Ideas";
 import Kids from "./Kids";
 import Kitchen from "./Kitchen";
 import Lighting from "./Lighting";
+import Lists from "./Lists";
 import More from "./More";
 import Outdoor from "./Outdoor";
 import Rugs from "./Rugs";
@@ -30,6 +33,10 @@ export default function AllRoutes() {
         <Route path="/outdoor" element={<Outdoor/>} />
         <Route path="/rugs" element={<Rugs/>}/>
         <Route path="/sales" element={<Sales/>} />
+        <Route path="/account" element={<Account/>} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/lists" element={<Lists/>} />
+
       </Routes>
     </div>
   );
