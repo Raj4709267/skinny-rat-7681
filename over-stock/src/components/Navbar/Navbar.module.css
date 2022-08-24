@@ -8,15 +8,14 @@
     display: flex;
     gap: 20px;
     border: 1px solid rgb(215, 215, 215);
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 15px 15px 15px 15px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navTopContainer>div {
-    display: flex;
-    align-items: center;
-
+    display: flex;   
 }
 
 .navTopContainer>div:nth-child(4) {
@@ -36,7 +35,7 @@
 
 }
 
-.iconsMenu>div {
+.iconsMenu>div div, .cartIcon>div div  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,9 +43,10 @@
 
 }
 
-.iconsMenu p {
+.iconsMenu p,.cartIcon p {
     font-size: 13px;
 }
+
 
 .navTopContainer>div:nth-child(1) {
     display: block;
@@ -59,10 +59,16 @@
 .navTopContainer>div:nth-child(2) {
     display: none;
 }
+.cartIcon>div {
+    display: none;
+}
 
 @media (min-width: 200px) and (max-width: 900px) {
     .iconsMenu>div {
         display: none;
+    }
+    .cartIcon>div {
+        display: block;
     }
 
     .navTopContainer>div:nth-child(1) {
@@ -76,8 +82,27 @@
     .navTopContainer>div:nth-child(2) {
         display: block;
     }
+    .navMenu{
+        display: none;
+    }
 }
-.Hamburger>div{
+.search2{
+    display: none;
+    margin: auto;
+}
+@media (min-width: 100px) and (max-width: 370px){
+    .search>div{
+        display: none;
+    }
+    .search2{
+        display: block;
+        width: 80%;
+        
+    }
+   
+}
+
+.Hamburger div{
     border-bottom: 1px solid #d1d1d1;
     padding: 15px;
     width: 100;
