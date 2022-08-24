@@ -19,6 +19,7 @@ function Navbar() {
 
   return (
     <div className={navbarCss.navbar}>
+      
       <div className={navbarCss.navTopContainer}>
         <div>
           {/* logo */}

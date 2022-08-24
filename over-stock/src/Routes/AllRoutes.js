@@ -18,7 +18,7 @@ import Sales from "./Sales";
 
 export default function AllRoutes() {
   return (
-    <div>
+    <div style={{width:"90%",margin:"auto"}} > 
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/bedding" element={<Bedding/>} />

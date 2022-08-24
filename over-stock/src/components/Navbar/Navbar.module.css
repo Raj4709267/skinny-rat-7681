@@ -97,7 +97,7 @@
     .search2{
         display: block;
         width: 80%;
-        
+        margin-bottom: 20px;
     }
    
 }
@@ -123,4 +123,7 @@
 }
 .navMenu{
     border-bottom: 2px solid rgb(215, 215, 215);
+}
+.navMenu>div div:hover{
+    border-bottom: 2px solid #1874da;
 }
