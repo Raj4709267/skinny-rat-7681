@@ -11,8 +11,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import navbarCss from "../Navbar/Navbar.module.css";
 
-export default function Hamburger({ isOpen, onClose, setOpen }) {
-  //   const { isOpen, onOpen, onClose } = useDisclosure();
+export default function Hamburger({ isOpen, setOpen }) {
   const btnRef = React.useRef();
 
   function onClose() {

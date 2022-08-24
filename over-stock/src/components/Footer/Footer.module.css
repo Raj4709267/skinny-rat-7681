@@ -1,0 +1,26 @@
+
+.upper{
+    display: flex;
+    background: #545658;
+    color: white;
+    font-size: 13px;
+    justify-content: space-around;
+    padding: 50px;
+}
+.upper p{
+    margin-bottom: 30px;
+}
+.bottom{
+    background: #2f3337;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.bottom img{
+    height: 20px;
+}
