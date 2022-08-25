@@ -44,6 +44,7 @@ function Slider2() {
         alt="https://musical-daifuku-077f4e.netlify.app/Screenshot%202022-08-25%20084443_5.png"
       />
     </div>
+    
   );
 }
 
