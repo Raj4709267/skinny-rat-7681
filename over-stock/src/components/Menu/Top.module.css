@@ -1,0 +1,49 @@
+.sideImage {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sideImage img:last-child {
+    margin-top: 20px;
+}
+
+.categories {
+    margin: 15px;
+    padding-left: 20px;
+}
+
+.categories:hover {
+    border-left: 3px solid rgb(61, 61, 195);
+}
+
+.sideImage2 {
+    display: none;
+    gap: 5%;
+    margin-top: 5%;
+}
+.bigImage{
+    display: none;
+}
+
+@media (min-width: 200px) and (max-width: 900px) {
+    .im1 {
+        display: none;
+    }
+    .cate{
+        display: none;
+    }
+
+    .bigImage {
+        display: block;
+        width: 100%;
+    }
+
+    .sideImage2 {
+        display: flex;
+    }
+
+    .im2 {
+        display: none;
+    }
+}
