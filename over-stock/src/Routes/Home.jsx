@@ -4,6 +4,7 @@ import CategoryList from "../components/CategoryList/CategoryList";
 import FirstImage from "../components/Home/FirstImage";
 import LimitedDeals from "../components/Home/LimitedDeals";
 import Slider from "../components/Slider/Slider";
+import Slider2 from "../components/Slider/Slider";
 // import { Link } from 'react-router-dom'
 
 function Home() {
@@ -19,22 +20,25 @@ function Home() {
         }
       />
       <CategoryList />
-      <Heading textAlign={"center"} margin="50px" >
-      Summer Styles for Every Budget
+      <Heading textAlign={"center"} margin="50px">
+        Summer Styles for Every Budget
       </Heading>
-      <Slider/>
+      <Slider />
       <FirstImage
         img={
           "https://superb-marzipan-2f8350.netlify.app/Screenshot%202022-08-24%20165905.png"
         }
       />
-       <FirstImage
+      <Heading textAlign={"center"} margin="50px">
+        Overstock Featured Brands
+      </Heading>
+      <Slider2 />
+
+      <FirstImage
         img={
           "https://curious-daffodil-dfbaae.netlify.app/Screenshot%202022-08-25%20071637.png"
         }
       />
-      
-      
     </div>
   );
 }
