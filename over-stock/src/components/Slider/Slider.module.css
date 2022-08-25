@@ -1,0 +1,18 @@
+.slider {
+    display: flex;
+    overflow: scroll;
+    gap: 20px;
+    margin-bottom: 40px;
+    /* overflow-x: hidden; */
+}
+::-webkit-scrollbar {
+    width: 0px;
+
+}
+::-webkit-scrollbar-thumb {
+    /* background: #FF0000; */
+}
+
+.slider img{
+    height: 370px;
+}
