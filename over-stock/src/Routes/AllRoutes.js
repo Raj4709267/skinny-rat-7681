@@ -13,6 +13,7 @@ import Lighting from "./Lighting";
 import Lists from "./Lists";
 import More from "./More";
 import Outdoor from "./Outdoor";
+import ProductPage from "./ProductPage";
 import Rugs from "./Rugs";
 import Sales from "./Sales";
 
@@ -21,6 +22,7 @@ export default function AllRoutes() {
     <div style={{width:"90%",margin:"auto"}} > 
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/productpage" element={<ProductPage/>} />
         <Route path="/bedding" element={<Bedding/>} />
         <Route path="/decor" element={<Decor/>} />
         <Route path="/furniture" element={<Furniture/>} />
