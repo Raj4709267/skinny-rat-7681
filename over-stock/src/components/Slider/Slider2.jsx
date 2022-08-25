@@ -26,6 +26,7 @@ function Slider2() {
       />
       
     </div>
+    
   );
 }
 
