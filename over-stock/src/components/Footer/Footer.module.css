@@ -24,3 +24,11 @@
 .bottom img{
     height: 20px;
 }
+.hide{
+    display: block;
+}
+@media (min-width: 100px) and (max-width: 700px){
+    .hide{
+        display: none;
+    }
+}

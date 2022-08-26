@@ -1,17 +1,23 @@
+import { Box, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import footer from "./Footer.module.css";
+import style from "./Footer.module.css"
 
 function Upper() {
   return (
-    <div className={footer.upper}>
-      <div>
-        <p>
-          <b>MY ACCOUNT</b>
-        </p>
-        <p>Orders & Returns</p>
-        <p>Email Preferences</p>
-        <p>Account Settings</p>
-      </div>
+    <SimpleGrid className={footer.upper} columns={4} spacing={10}>
+      
+      <Box>
+        <div>
+          <p>
+            <b>MY ACCOUNT</b>
+          </p>
+          <p>Orders & Returns</p>
+          <p>Email Preferences</p>
+          <p>Account Settings</p>
+        </div>
+      </Box>
+      <Box>
       <div>
         <p>
           <b>LET US HELP</b>
@@ -22,7 +28,9 @@ function Upper() {
         <p>Internationl Help</p>
         <p>Accessibility</p>
       </div>
-      <div>
+      </Box>
+      <Box>
+      <div className={style.hide2} >
         <p>
           <b> COMPANY INFORMATION </b>
         </p>
@@ -33,7 +41,9 @@ function Upper() {
         <p> Sell Your Products </p>
         <p> Supply Chain Transparency </p>
       </div>
-      <div>
+      </Box>
+      <Box>
+      <div className={style.hide} >
         <p>
           <b>MORE WAYS TO SHOP </b>
         </p>
@@ -42,7 +52,8 @@ function Upper() {
         <p> Clearance </p>
         <p> New Arrivals </p>
       </div>
-    </div>
+      </Box>
+    </SimpleGrid>
   );
 }
 
