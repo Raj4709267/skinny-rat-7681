@@ -141,7 +141,7 @@ function CartIcon() {
               fill="inherit"
             ></path>
           </svg>
-          <p className={navbarCss.cartQuntity}>2</p>
+          <p className={navbarCss.cartQuntity}>0</p>
           <p>Cart</p>
         </div>
       </Link>
