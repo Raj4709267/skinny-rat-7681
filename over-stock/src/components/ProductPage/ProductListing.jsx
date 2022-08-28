@@ -5,7 +5,8 @@ import style from "./Product.module.css";
 import { CartContext } from "../../Context/CartContext";
 
 function ProductListing({ data }) {
-  let { handelChange } = useContext(CartContext);
+  let { handelChange,addToCart } = useContext(CartContext);
+  
 
   return (
     <SimpleGrid marginBottom={"60px"} marginTop="50px" columns={2} spacing={10}>
@@ -27,7 +28,10 @@ function ProductListing({ data }) {
                   alt="https://www.seekpng.com/png/full/411-4110082_four-half-stars-0-copy-star-rating-with.png"
                 />
                 <p className={style.p2}>{item.p2}</p>
-                <Button colorScheme={"whatsapp"} onClick={() => handelChange()}> Add to Cart </Button>
+                <Button colorScheme={"whatsapp"} onClick={() => {
+                  handelChange()
+                  addToCart(item)
+                  }}> Add to Cart </Button>
               </Box>
             );
           })}

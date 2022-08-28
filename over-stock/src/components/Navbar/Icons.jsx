@@ -4,7 +4,6 @@ import { CartContext } from "../../Context/CartContext";
 import navbarCss from "../Navbar/Navbar.module.css";
 export default function Icons() {
   let { cart } = useContext(CartContext);
-  console.log(cart);
   return (
     <>
       <div style={{ color: "#c92834" }}>
