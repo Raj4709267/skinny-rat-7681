@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../Context/CartContext";
 import navbarCss from "../Navbar/Navbar.module.css";
 export default function Icons() {
+  let { cart } = useContext(CartContext);
+  console.log(cart);
   return (
     <>
       <div style={{ color: "#c92834" }}>
@@ -110,7 +114,7 @@ export default function Icons() {
                 fill="inherit"
               ></path>
             </svg>
-            <p className={navbarCss.cartQuntity}>0</p>
+            <p className={navbarCss.cartQuntity}>{cart}</p>
             <p>Cart</p>
           </div>
         </Link>
@@ -120,6 +124,8 @@ export default function Icons() {
 }
 
 function CartIcon() {
+  let { cart } = useContext(CartContext);
+
   return (
     <div>
       <Link to={"/cart"}>
@@ -141,7 +147,7 @@ function CartIcon() {
               fill="inherit"
             ></path>
           </svg>
-          <p className={navbarCss.cartQuntity}>0</p>
+          <p className={navbarCss.cartQuntity}>{cart}</p>
           <p>Cart</p>
         </div>
       </Link>
