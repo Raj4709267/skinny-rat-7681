@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import { Box, Button, SimpleGrid } from "@chakra-ui/react";
+import { Box, Button, SimpleGrid, useToast } from "@chakra-ui/react";
 import Options from "./Options";
 import style from "./Product.module.css";
 import { CartContext } from "../../Context/CartContext";
 
 function ProductListing({ data }) {
-  let { handelChange,addToCart } = useContext(CartContext);
-  
+  let { handelChange, addToCart } = useContext(CartContext);
+  const toast = useToast();
 
   return (
     <SimpleGrid marginBottom={"60px"} marginTop="50px" columns={2} spacing={10}>
@@ -28,10 +28,22 @@ function ProductListing({ data }) {
                   alt="https://www.seekpng.com/png/full/411-4110082_four-half-stars-0-copy-star-rating-with.png"
                 />
                 <p className={style.p2}>{item.p2}</p>
-                <Button colorScheme={"whatsapp"} onClick={() => {
-                  handelChange()
-                  addToCart(item)
-                  }}> Add to Cart </Button>
+                <Button
+                  marginTop={"10px"}
+                  colorScheme={"whatsapp"}
+                  onClick={() => {
+                    handelChange();
+                    toast({
+                      title: `Item Added`,
+                      status: "success",
+                      isClosable: true,
+                    });
+                    addToCart(item);
+                  }}
+                >
+                  {" "}
+                  Add to Cart{" "}
+                </Button>
               </Box>
             );
           })}

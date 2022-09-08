@@ -10,7 +10,7 @@ import Logo2 from "./Logo2";
 import NavMenu from "./NavMenu";
 import Search from "./Search";
 function Navbar() {
-  const [isCheckout, setIsCheckout] = useState(false);
+  const [isCheckout, setIsCheckout] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
   function setOpen(value) {
