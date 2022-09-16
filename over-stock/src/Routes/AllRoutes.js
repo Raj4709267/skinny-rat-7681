@@ -23,18 +23,18 @@ export default function AllRoutes() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/productpage" element={<ProductPage/>} />
-        <Route path="/bedding" element={<Bedding/>} />
-        <Route path="/decor" element={<Decor/>} />
+        <Route path="/bedding" element={<Furniture/>} />
+        <Route path="/decor" element={<Furniture/>} />
         <Route path="/furniture" element={<Furniture/>} />
-        <Route path="/homeimprovement" element={<HomeImprovement/>} />
-        <Route path="/ideas" element={<Ideas/>} />
-        <Route path="/kids" element={<Kids/>} />
-        <Route path="/kitchen" element={<Kitchen/>} />
-        <Route path="/lighting" element={<Lighting/>} />
+        <Route path="/homeimprovement" element={<Furniture/>} />
+        <Route path="/ideas" element={<Furniture/>} />
+        <Route path="/kids" element={<Furniture/>} />
+        <Route path="/kitchen" element={<Furniture/>} />
+        <Route path="/lighting" element={<Furniture/>} />
         <Route path="/more" element={<More/>} />
-        <Route path="/outdoor" element={<Outdoor/>} />
-        <Route path="/rugs" element={<Rugs/>}/>
-        <Route path="/sales" element={<Sales/>} />
+        <Route path="/outdoor" element={<Furniture/>} />
+        <Route path="/rugs" element={<Furniture/>}/>
+        <Route path="/sales" element={<Furniture/>} />
         <Route path="/account" element={<Account/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/lists" element={<Lists/>} />

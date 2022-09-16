@@ -1,5 +1,6 @@
-import {Image } from "@chakra-ui/react";
+ import {Image } from "@chakra-ui/react";
 import React, { useContext } from "react";
+import CartCard from "../components/Cart/Cart";
 import { CartContext } from "../Context/CartContext";
 
 function Cart() {
@@ -9,24 +10,8 @@ function Cart() {
     <div style={{marginTop:"30px"}} >
       {cartData.map((item) => {
         return (
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              border: "1px solid black",
-              marginBottom: "20px",
-              padding:"20px",
-              borderRadius:"10px"
-            }}
-          >
-            <Image height={"70px"} src={item.img} alt={item.img} />
-            <div>
-              <p>{item.p1}</p>
-              <p>{item.p2}</p>
-            </div>
-
-          </div>
-        );
+          <CartCard key={item.id} {...item} />
+        )
       })}
     </div>
   );
