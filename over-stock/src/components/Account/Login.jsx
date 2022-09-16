@@ -1,8 +1,31 @@
 import { Button, Checkbox, Heading, Input } from "@chakra-ui/react";
+import axios from "axios";
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./Account.module.css";
 function Login() {
+  const [email,setEmail]=useState();
+  const [password,setPassword]=useState();
+  const [error,setError]=useState(false)
+  function handelSignUp(){
+    console.log(email,password)
+    
+    const payload={
+      email:email,
+      password:password
+    }
+    axios.post("https://reqres.in/api/register").then(res=>{
+      console.log(res)
+      setError(false)
+    }).catch(e=>{
+      setError(true)
+      console.log(e)
+      setEmail("")
+      setPassword("")
+    })
+  }
+
   return (
     <div>
       <div className={style.signup}>
@@ -14,6 +37,8 @@ function Login() {
           placeholder="Email"
           type={"email"}
           focusBorderColor="blue.500"
+          value={email}
+          onChange={(e)=>setEmail(e.target.value)}
         />
         <div>
           <p className={style.p}>Password*</p>
@@ -21,14 +46,17 @@ function Login() {
             placeholder="Password"
             type={"password"}
             focusBorderColor="blue.500"
+            value={password}
+            onChange={(e)=>setPassword(e.target.value)}
           />
         </div>
 
-        <Link to={"/"} >
-        <Button   marginTop={"20px"} colorScheme={"whatsapp"} width={"100%"}>
-          Create Account
+        <Button  onClick={()=>handelSignUp()} marginTop={"20px"} colorScheme={"whatsapp"} width={"100%"}>
+          Login
         </Button>
-        </Link>
+        {
+          error && <p>Please enter correct Email</p>
+        }
         
       </div>
     </div>

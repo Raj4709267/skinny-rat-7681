@@ -1,8 +1,24 @@
 import { Button, Checkbox, Heading, Input } from "@chakra-ui/react";
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import style from "./Account.module.css";
 
 function Signup() {
+  const [email,setEmail]=useState();
+  const [password,setPassword]=useState();
+  function handelSignUp(){
+    console.log(email,password)
+    
+    const payload={
+      email:email,
+      password:password
+    }
+    axios.post("https://reqres.in/api/register").then(res=>{
+      console.log(res)
+    }).catch(e=>{
+      console.log(e)
+    })
+  }
   return (
     <div className={style.signup}>
       <Heading margin={"30px 0 40px 0"} fontSize={"20px"}>
@@ -13,6 +29,8 @@ function Signup() {
         placeholder="Email"
         type={"email"}
         focusBorderColor="blue.500"
+        value={email}
+          onChange={(e)=>setEmail(e.target.value)}
       />
       <div className={style.password}>
         <div>
@@ -21,6 +39,8 @@ function Signup() {
             placeholder="Password"
             type={"password"}
             focusBorderColor="blue.500"
+            value={password}
+          onChange={(e)=>setPassword(e.target.value)}
           />
         </div>
         <div>
@@ -38,7 +58,7 @@ function Signup() {
           offers from Overstock.com delivered right to your inbox**
         </p>
       </div>
-      <Button colorScheme={"facebook"} width={"100%"}>
+      <Button onClick={()=>handelSignUp()} colorScheme={"facebook"} width={"100%"}>
         Create Account
       </Button>
       <div className={style.terms}>
