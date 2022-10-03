@@ -27,8 +27,14 @@
 .hide{
     display: block;
 }
+/* .upper>div{
+    border: 1px solid red;
+} */
 @media (min-width: 100px) and (max-width: 700px){
-    .hide{
-        display: none;
+    .upper p{
+        margin-bottom: 5px;
+    }
+    .upper{
+        padding: 20px;
     }
 }

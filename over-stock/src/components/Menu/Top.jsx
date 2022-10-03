@@ -6,11 +6,11 @@ import style from "./Top.module.css";
 function Top({ topData, topImgs }) {
   return (
     <div>
-      <SimpleGrid className={style.container} columns={3} spacing={10}>
+      <SimpleGrid className={style.container} columns={[2,2,2,3]} spacing={10}>
         <Box className={style.cate} width="75%">
           <Categories topData={topData} />
         </Box>
-        <Box className={style.im1} width="155%" marginLeft={"-25%"}>
+        <Box className={style.im1} marginLeft={"-25%"}>
           <div>
             <img src={topImgs[0].bigImage} alt={topImgs[0].bigImage} />
           </div>
