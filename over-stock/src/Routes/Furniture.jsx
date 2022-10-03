@@ -1,5 +1,6 @@
 import { Heading } from '@chakra-ui/react'
 import React from 'react'
+import Popular from '../components/Menu/Popular'
 import Top from '../components/Menu/Top'
 
 const topData=[
@@ -62,6 +63,7 @@ function Furniture() {
         Furniture
       </Heading>
       <Top topData={topData} topImgs={topImgs} />
+      <Popular/>
     </div>
   )
 }

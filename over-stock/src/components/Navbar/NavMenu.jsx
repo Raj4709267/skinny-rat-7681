@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-    <div>
+    <>
       <div>
         <Link  to={"/furniture"} > Furniture</Link>
       </div>
@@ -41,7 +41,7 @@ function Menu() {
         <Link  to={"/sales"} > Sales & Deals</Link>
       </div>
       
-    </div>
+    </>
   );
 }
 

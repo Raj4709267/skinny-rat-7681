@@ -5,7 +5,7 @@ import style from "./Footer.module.css"
 
 function Upper() {
   return (
-    <SimpleGrid className={footer.upper} columns={4} spacing={10}>
+    <SimpleGrid className={footer.upper} columns={[2,2,4,4]} spacing={5}>
       
       <Box>
         <div>

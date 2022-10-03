@@ -6,8 +6,8 @@ import style from "./Top.module.css";
 function Categories({ topData }) {
   return (
     <div>
-      <Heading fontSize={"25px"} margin="10px" marginLeft={"0"} marginBottom={"20px"}>
-        Featured Categories
+      <Heading className={style.Heading} fontSize={"25px"} margin="10px" marginLeft={"0"} marginBottom={"20px"}>
+       <p>Featured Categories</p> 
       </Heading>
 
       {topData.map((item) => {

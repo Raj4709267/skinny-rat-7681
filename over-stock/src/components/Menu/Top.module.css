@@ -25,9 +25,13 @@
 .bigImage{
     display: none;
 }
+.im1 img{
+    width:"155%";
+    /* border: 1px solid rgb(255, 0, 0); */
+}
 
-@media (min-width: 200px) and (max-width: 900px) {
-    .im1 {
+@media (min-width: 200px) and (max-width: 1000px) {
+    /* .im1 {
         display: none;
     }
     .cate{
@@ -37,7 +41,7 @@
     .bigImage {
         display: block;
         width: 100%;
-    }
+    } */
 
     .sideImage2 {
         display: flex;
@@ -45,5 +49,16 @@
 
     .im2 {
         display: none;
+    }
+    .categories {
+        margin: 1px;
+        padding-left: 0px;
+        font-size: 12px;
+    }
+    .Heading p{
+        font-size: 14px;
+    }
+    .im1{
+        width: 100%;
     }
 }
