@@ -2,7 +2,6 @@ import { Button, Checkbox, Heading, Input } from "@chakra-ui/react";
 import axios from "axios";
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import style from "./Account.module.css";
 function Login() {
   const [email,setEmail]=useState();
@@ -11,10 +10,10 @@ function Login() {
   function handelSignUp(){
     console.log(email,password)
     
-    const payload={
-      email:email,
-      password:password
-    }
+    // const payload={
+    //   email:email,
+    //   password:password
+    // }
     axios.post("https://reqres.in/api/register").then(res=>{
       console.log(res)
       setError(false)
