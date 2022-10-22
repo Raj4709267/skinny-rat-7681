@@ -1,17 +1,11 @@
 import { Button } from "@chakra-ui/react";
+import style from "./Cart.module.css"
 
 function CartCard(props) {
   let arr=props.p1.trim("").split(" ")
+  // console.log(arr)
   return (
-    <div style={{
-        display:"flex",
-        gap:"30px",
-        border:"1px solid #787677",
-        marginBottom: "20px",
-        borderRadius:"10px",
-        padding:"20px",
-        width:"50%"
-    }} >
+    <div className={style.cart}>
       <div>
         <img width={"200px"} src={props.img} alt={props.img} />
       </div>
@@ -20,7 +14,6 @@ function CartCard(props) {
         <br />
         <p>Price - <b>{+(arr[arr.length-1])}</b></p>
         {/* <p>Quntity <button>-</button>{qun}<button>+</button></p> */}
-        <Button marginTop={"20px"} >Check Out</Button>
       </div>
     </div>
   );

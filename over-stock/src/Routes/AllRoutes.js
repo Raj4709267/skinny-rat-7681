@@ -1,21 +1,11 @@
 import {Routes,Route} from "react-router-dom"
 import Account from "./Account";
-import Bedding from "./Bedding";
 import Cart from "./Cart";
-import Decor from "./Decor";
 import Furniture from "./Furniture";
 import Home from "./Home";
-import HomeImprovement from "./HomeImprovement";
-import Ideas from "./Ideas";
-import Kids from "./Kids";
-import Kitchen from "./Kitchen";
-import Lighting from "./Lighting";
 import Lists from "./Lists";
 import More from "./More";
-import Outdoor from "./Outdoor";
 import ProductPage from "./ProductPage";
-import Rugs from "./Rugs";
-import Sales from "./Sales";
 
 export default function AllRoutes() {
   return (
