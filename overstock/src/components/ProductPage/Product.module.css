@@ -1,0 +1,47 @@
+
+.options{
+    height: 500px;
+    overflow:scroll;    
+    width: 50%;
+
+}
+
+.options::-webkit-scrollbar {
+    width: 10px;
+
+}
+.options>div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+    border-top: 1px solid rgb(189, 189, 189);
+    justify-content: space-between;
+}
+
+.p1{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.p2{
+    font-size: 13px;
+}
+.star{
+    height: 15px;
+    margin-bottom: 10px;
+}
+.productMedia{
+    margin-left: -50%;
+}
+@media (min-width: 200px) and (max-width: 900px) {
+
+    .categoryHide{
+        display: none;
+    }
+    .productMedia{
+        margin-left: 0px;
+        width: 200%;
+    }
+}

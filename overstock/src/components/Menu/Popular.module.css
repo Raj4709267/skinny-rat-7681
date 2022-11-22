@@ -1,0 +1,14 @@
+
+.popular>p{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top:30px ;
+}
+.popular>div>div{
+    text-align: center;
+    background: rgb(244, 244, 244);
+}
+.popular>div>div p{
+    font-size: 18px;
+    margin: 10px;
+}
