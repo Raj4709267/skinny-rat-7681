@@ -22,7 +22,7 @@
 
 ## Home Page-1
 
-<img src="./master/overstock/public/homepage1.png" >
+<img src="./overstock/public/homepage1.png" >
 
 ## Home Page-2
 
