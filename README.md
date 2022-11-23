@@ -26,28 +26,19 @@
 
 ## Home Page-2
 
-<img  src="./monster/public/homepage-2.png">
+<img  src="./overstock/public/homepage2.png">
 
-## Footer
-
-<img src="./monster/public/footer.png">
-
-## Login Page
-
-<img src="./monster/public/login.png" >
 
 ## Register
 
-<img src="./monster/public/register.png">
+<img src="./overstock/public/login.png">
 
-## Work-From-Home
+## Product Page
 
-<img src="./monster/public/work-from-home-jobs.png">
+<img src=".overstock/public/product.png">
 
-## For Employeers-1
 
-<img src="./monster/public/foremployeers-1.png" >
 
-## For Employeers-2
+## Cart Page
 
-<img src="./monster/public/foremployeers-2.png" >
+<img src="./overstock/public/cart.png >
