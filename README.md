@@ -35,10 +35,10 @@
 
 ## Product Page
 
-<img src=".overstock/public/product.png">
+<img src="./overstock/public/product.png">
 
 
 
 ## Cart Page
 
-<img src="./overstock/public/cart.png >
+<img src="./overstock/public/cart.png" >
